@@ -60,7 +60,7 @@ export default function Card(props) {
   
 
   return (
-    <div key={props.foodItem._id}>
+    <div>
       <div className="card mt-3" style={{ "width": "19rem", "height": "470px" }}>
         <img src={props.foodItem.img} className="card-img-top" style={{ "height": "180px" }} alt="..." />
         <div className="card-body">

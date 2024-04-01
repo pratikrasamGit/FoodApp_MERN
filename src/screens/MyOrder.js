@@ -47,7 +47,7 @@ export default function MyOrder() {
                                         item.map((arrayData) => {
                                             return (
                                                 <div  >
-                                                    {arrayData.order_date ? <div className='m-auto mt-5'>
+                                                    {arrayData.order_date ? <div className='m-auto mt-5 text-white'>
 
                                                         {data = arrayData.order_date}
                                                         <hr />

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/foodApp_MERN/static/css/main.2b2edc30.css",
+    "main.js": "/foodApp_MERN/static/js/main.68b8ac00.js",
+    "static/js/453.656232c5.chunk.js": "/foodApp_MERN/static/js/453.656232c5.chunk.js",
+    "index.html": "/foodApp_MERN/index.html",
+    "main.2b2edc30.css.map": "/foodApp_MERN/static/css/main.2b2edc30.css.map",
+    "main.68b8ac00.js.map": "/foodApp_MERN/static/js/main.68b8ac00.js.map",
+    "453.656232c5.chunk.js.map": "/foodApp_MERN/static/js/453.656232c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b2edc30.css",
+    "static/js/main.68b8ac00.js"
+  ]
+}
