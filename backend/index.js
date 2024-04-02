@@ -6,7 +6,7 @@ mongoDb();
 
 
 app.use((req,res,next) => {
-  res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Origin",`http://localhost:3000`);
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
@@ -22,6 +22,8 @@ app.use('/api', require('./routes/OrderData'));
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
+  // app.use(express.static(path.resolve(__dirname, "frontend", "build")));
+  // res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 })
 
 app.listen(port, () => {
