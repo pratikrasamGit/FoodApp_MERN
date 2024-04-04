@@ -11,7 +11,7 @@ export default function Home() {
 
   const loadData = async () => {
     let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/foodData`, {
-      // mode: 'no-cors',
+      mode: 'no-cors',
       method: "POST",
       headers: {
         "Content-Type": "application/json",
