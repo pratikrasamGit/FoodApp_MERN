@@ -17,7 +17,7 @@ export default function Home() {
         'Content-Type': 'application/json'
       }
     });
-    response = await response.json();
+    response = response.json();
     // console.log(response[0], response[1]);
     setFoodCat(response[1]);
     setFoodItem(response[0]);

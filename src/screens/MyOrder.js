@@ -9,6 +9,7 @@ export default function MyOrder() {
     const fetchMyOrder = async () => {
         // console.log(localStorage.getItem('userEmail'))
         await fetch(`${process.env.REACT_APP_BASE_URL}/api/myOrderData`, {
+            mode: 'no-cors',
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
