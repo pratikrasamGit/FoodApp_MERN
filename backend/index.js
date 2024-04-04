@@ -4,8 +4,8 @@ const port = 5000
 const mongoDb = require("./db")
 mongoDb();
 
-const cors = require("cors");
-app.use(cors());
+// const cors = require("cors");
+// app.use(cors());
 
 app.use((req,res,next) => {
   res.setHeader("Access-Control-Allow-Origin",`${process.env.REACT_APP_BASE_URL}`);
