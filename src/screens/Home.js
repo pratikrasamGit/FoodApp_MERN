@@ -20,7 +20,7 @@ export default function Home() {
     });
     console.log(response.json());
     let fdata = await response.json();
-    console.log(fdata[0], fdata[1]);
+    console.log(fdata[0]);
     setFoodCat(fdata[1]);
     setFoodItem(fdata[0]);
   }
