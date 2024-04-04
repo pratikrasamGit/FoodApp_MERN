@@ -9,8 +9,8 @@ export default function Home() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItem, setFoodItem] = useState([]);
 
-  const loadData = async () => {
-    let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/foodData`, {
+  const loadData =  () => {
+    let response =  fetch(`${process.env.REACT_APP_BASE_URL}/api/foodData`, {
       mode: 'no-cors',
       method: "POST",
       headers: {
@@ -20,7 +20,7 @@ export default function Home() {
       }
     });
     console.log(response.json());
-    let fdata = await response.json();
+    let fdata =  response.json();
     console.log(fdata[0]);
     setFoodCat(fdata[1]);
     setFoodItem(fdata[0]);
