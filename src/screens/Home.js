@@ -18,11 +18,11 @@ export default function Home() {
         "Access-Control-Allow-Origin": "*",
       }
     });
-    console.log(response);
-    response = await response.json();
-    console.log(response[0], response[1]);
-    setFoodCat(response[1]);
-    setFoodItem(response[0]);
+    console.log(response.json());
+    let fdata = await response.json();
+    console.log(fdata[0], fdata[1]);
+    setFoodCat(fdata[1]);
+    setFoodItem(fdata[0]);
   }
 
   useEffect(() => {
