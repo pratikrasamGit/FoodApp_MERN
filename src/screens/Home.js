@@ -14,7 +14,7 @@ export default function Home() {
       mode: 'no-cors',
       method: "POST",
       headers: {
-        "Accept" : "application/json",
+        "Accept" : " */*",
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       }
