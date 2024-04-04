@@ -16,7 +16,7 @@ export default function Home() {
       headers: {
         "Accept" : "application/json",
         // "Content-Type": "application/json",
-        // "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "*",
       }
     });
     console.log(response.json());
